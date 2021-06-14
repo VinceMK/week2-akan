@@ -23,23 +23,24 @@
         <section class="gameform"  id="games"> 
             <div class="container">
                 <div class="row">
-                    <h3 class="game-head text-center">Please fill in the following</h3>
+                    <h2 class="game-head text-center">Please fill in :</h2>
                     <div class="column">
                         <form>
                             <div class="form-group col-sm-4">
                                 <label class="game-head" for="inputState">Gender</label>
-                                <select id="inputState" class="form-control">
+                                <select id="gender" class="form-control">
                                     <option></option>
                                     <option>Male </option>
                                     <option>Female</option>
                                 </select>
                             </div>
-                            <label class="game-head" S for="start">Date of Birth:</label>
-                            <input type="date" id="start" name="trip-start"
+                            <div class="form-group">
+                                <label class="game-head" S for="start">Date of Birth:</label>
+                                <input type="date" id="start" name="trip-start"
                                     value="2021-07-10"
-                                    id= "dateInput"
                                     min="1900-01-01" max="2021-12-31">
-                            <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                            <button type="button" class="btn btn-primary" onclick=" getBirthday()">Submit</button>
                         </form>
                     </div>
                 </div>
