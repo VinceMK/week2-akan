@@ -39,14 +39,14 @@ function getAkanName(dayofWeek, gender) {
         let akanPair = male[day];
 
         console.log(akanPair);
-        // document.getElementById("Akandisplay").innerHTML = " Your Day of birth and Akan name is" + male[dayofWeek];
+        document.getElementById("Akandisplay").innerHTML = " Your Day of birth and Akan name is" + male[dayofWeek];
 
 
 
     } else if (gender === "Female") {
         let akanPair = female[day];
         console.log(akanPair);
-        // document.getElementById("Akandisplay").innerHTML = " Your Day of birth and Akan name is" + female[dayofWeek];
+        document.getElementById("Akandisplay").innerHTML = " Your Day of birth and Akan name is" + female[dayofWeek];
     } else {
 
         console.log("The Gender or Date can not be empty")
