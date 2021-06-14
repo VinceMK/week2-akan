@@ -1,45 +1,55 @@
 function getBirthday() {
-    alert("Enter Your date of Birth to get Akan name");
-    let dob = prompt("Enter Date of Birth mm/dd/yyyy");
-    let gender = prompt("Enter gender 'M' for male, 'F' for female");
+    
+    let gender = document.getElementById("gender").value;
+    let dob = document.getElementById("start").value;
 
-    getAkanName(dob, gender)
-
-}
-
-function getAkanName(dob, gender) {
     let dateStr = new Date(dob);
     let dayofWeek = dateStr.getDay();
+
+     //console.log(dayofWeek);
+     //console.log(gender);
+
+
+     getAkanName(dayofWeek, gender);
+
+};
+
+function getAkanName(dayofWeek, gender) {
+    let day = dayofWeek;
     let male = [
-        " Sunday: Kwasi ",
-        "Monday: Kwadwo",
-        "Tuesday: Kwabena",
-        "Wednesday: Kwaku",
-        "Thursday: Yaw",
-        "Friday: Kofi",
-        "Saturday: Kwame"
+         "Kwasi",
+         "Kwadwo",
+         "Kwabena",
+         "Kwaku",
+         "Yaw",
+         "Kofi",
+         "Kwame"];
+
+    let female = [ 
+        "Akosua",
+        "Adwoa",
+        "Abenaa",
+        "Akua",
+        "Afua",
+        "Ama"
     ];
-    let female = [
-        "Sunday: Akosua",
-        "Monday: Adwoa",
-        "Tuesday: Abenaa",
-        "Wednesday: Akua",
-        "Thursday: Yaa",
-        "Friday: Afua",
-        "Saturday: Ama"
-    ];
-    if (gender == "M") {
-        console.log(male[dayofWeek]);
-        document.getElementById("Akandisplay").innerHTML = " Your Day of birth and Akan name is" + male[dayofWeek];
+
+
+    if (gender === "Male") {
+        let akanPair = male[day];
+
+        console.log(akanPair);
+        // document.getElementById("Akandisplay").innerHTML = " Your Day of birth and Akan name is" + male[dayofWeek];
 
 
 
-    } else if (gender == "F") {
-        // console.log(female[dayofWeek]);
-        document.getElementById("Akandisplay").innerHTML = " Your Day of birth and Akan name is" + female[dayofWeek];
+    } else if (gender === "Female") {
+        let akanPair = female[day];
+        console.log(akanPair);
+        // document.getElementById("Akandisplay").innerHTML = " Your Day of birth and Akan name is" + female[dayofWeek];
     } else {
 
-        console.log("The Gender or Date is wrong")
+        console.log("The Gender or Date can not be empty")
     }
 
 }
