@@ -17,7 +17,7 @@ function getBirthday() {
 function getAkanName(dayofWeek, gender) {
     let day = dayofWeek;
     let week = [
-        "Monday",
+        "Sunday",
         "Monday",
         "Tuesday",
         "Wednesday",
@@ -40,23 +40,20 @@ function getAkanName(dayofWeek, gender) {
         "Abenaa",
         "Akua",
         "Afua",
-        "Ama"
-    ];
+        "Ama"];
 
 
     if (gender === "Male") {
         let akanPair = male[day];
+
         let weekDay = week[day];
 
-        console.log(akanPair);
-        document.getElementById("Akandisplay").innerHTML = " Your Akan name is" + akanPair + " since you were born on a " + weekDay;
-
+        document.getElementById("Akandisplay").innerHTML = " Your Akan name is " + akanPair + " since you were born on a " + weekDay;
 
 
     } else if (gender === "Female") {
         let akanPair = female[day];
-        console.log(akanPair);
-        document.getElementById("Akandisplay").innerHTML = " Your Akan name is" + akanPair + " since you were born on a " + weekDay;
+        document.getElementById("Akandisplay").innerHTML = " Your Akan name is " + akanPair + " since you were born on a " + weekDay;
     } else {
 
         console.log("The Gender or Date can not be empty")
