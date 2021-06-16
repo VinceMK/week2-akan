@@ -1,7 +1,7 @@
 
 # Akan-Names
 
-Foobar is a Python library for dealing with word pluralization.
+Akan-names is an interesting program that tells your your ghanain name based on when you were born and you gender. 
 
 ## Installation
 
@@ -9,7 +9,6 @@ Foobar is a Python library for dealing with word pluralization.
 
 ## Usage
 
-    View the portofolio and learn
 
 ## Contributing
 Pull requests are welcome. 
