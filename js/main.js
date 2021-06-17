@@ -50,7 +50,7 @@ function getAkanName(dayofWeek, gender) {
         let weekDay = week[day];
 
         document.getElementById("akan-name").innerHTML =  akanPair;
-        document.getElementById("akan-name2").innerHTML =   weekDay  ;
+        document.getElementById("akan-name2").innerHTML =   weekDay;
 
 
     } else if (gender === "Female") {
@@ -59,7 +59,7 @@ function getAkanName(dayofWeek, gender) {
         let weekDay = week[day];
 
         document.getElementById("akan-name").innerHTML =  akanPair;
-        document.getElementById("akan-name2").innerHTML =   weekDay  ;
+        document.getElementById("akan-name2").innerHTML =   weekDay;
 
     } else {
 
