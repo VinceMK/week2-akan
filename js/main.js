@@ -63,7 +63,7 @@ function getAkanName(dayofWeek, gender) {
 
     } else {
 
-        document.getElementById("Akandisplay").innerHTML ="The Gender or Date can not be empty";
+        document.getElementById("Akandisplay").innerHTML ="The Gender or Date can not be empty !";
     };
 
 }
