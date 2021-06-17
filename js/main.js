@@ -39,8 +39,9 @@ function getAkanName(dayofWeek, gender) {
         "Adwoa",
         "Abenaa",
         "Akua",
+        "Yaa",
         "Afua",
-        "Ama"];
+        "Ama",];
 
 
     if (gender === "Male") {
@@ -48,15 +49,24 @@ function getAkanName(dayofWeek, gender) {
 
         let weekDay = week[day];
 
-        document.getElementById("Akandisplay").innerHTML = " Your Akan name is " + akanPair + " since you were born on a " + weekDay;
+        document.getElementById("akan-name").innerHTML =  akanPair;
+        document.getElementById("akan-name2").innerHTML =   weekDay  ;
 
 
     } else if (gender === "Female") {
         let akanPair = female[day];
-        document.getElementById("Akandisplay").innerHTML = " Your Akan name is " + akanPair + " since you were born on a " + weekDay;
+        
+        let weekDay = week[day];
+
+        document.getElementById("akan-name").innerHTML =  akanPair;
+        document.getElementById("akan-name2").innerHTML =   weekDay  ;
+
     } else {
 
-        console.log("The Gender or Date can not be empty")
-    }
+        document.getElementById("Akandisplay").innerHTML ="The Gender or Date can not be empty";
+    };
 
 }
+
+
+
